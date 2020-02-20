@@ -1,0 +1,11 @@
+I create class Card with the required fields. I make the constructor and only the necessary getters and setters. 
+I create three separate classes for the types of cards that inherit class Card. 
+In class PayDesk I create the methods (given in the task).In method getDiscountRate() I calculate discount rate for the three types of cards with switch. 
+If the card is Bronze I check that turnover is less than a hundred, is between one hundred and three hundred or more to determine discount rate.
+By the same logic, it is for Silver and for Gold. About Gold for each $100 from turnover discount rate grows with 1%, capping at 10%.
+I calculate additionalRate by multiplying rateOfGrowth by turnover divided by amountOfGrowth. I compute discount rate by adding additionalRate to initial discount rate.
+In class Owner I have the names of the cardholders. In method getCardType() by checking if String cardType contains GoldCard, SilverCard or BronzeCard I determine the type of card.
+In method getDiscount() I calculate discount by calling method getDiscountRate() divide by one hundred because it is % and multiply it by purchase value.
+In method getTotalPurchaseValue() I calculate total by subtracting discount from purchase value. In Main, I create instances of classes Owner and Card (which can be BronzeCard, SilverCard or GoldCard). 
+I make the necessary variables and assign them a different value after each object by calling the methods. 
+Finally I print using method print() (printing is based on the example in the task).
